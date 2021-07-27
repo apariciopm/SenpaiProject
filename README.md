@@ -16,6 +16,10 @@ git commit -m "Esto es un cambio"
 
 git push
 
+<<<<<<< HEAD
 a
 
 jhk
+=======
+a
+>>>>>>> b3578f0ea58cf1d095baca0c929d58aaeb46cbc6
