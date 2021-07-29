@@ -7,5 +7,34 @@ p {
 }
 
 h1{
-    text-decoration-color: blue;
+    color: blue;
+    text-align: center;
 }
+
+h2{
+    color: rgb(255, 0, 149);
+    text-align: center;
+}
+h3{
+    color: rgb(255, 60, 0);
+    text-align: center;
+}
+h4{
+    color: rgb(255, 251, 0);
+    text-align: center;
+}
+h5{
+    color: rgb(79, 79, 207);
+    text-align: center;
+}
+h6{
+    color: rgb(67, 223, 202);
+    text-align: center;
+}
+
+ul{
+    background-color: brown;
+    color: burlywood;
+    text-align: end;
+}
+
