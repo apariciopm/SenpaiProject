@@ -1,9 +1,14 @@
 body {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(153, 152, 152);
+    background-image: url("/AparicioPineyrua-main/SenpaiProject/images/whaaat.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-attachment: fixed; */
 }
 
 p {
     text-align: center;
+    color: ivory;
 }
 
 h1{
