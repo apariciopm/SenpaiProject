@@ -3,12 +3,11 @@ body {
     background-image: url("/AparicioPineyrua-main/SenpaiProject/images/whaaat.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    /* background-attachment: fixed; */
 }
 
 p {
     text-align: center;
-    color: ivory;
+    color: rgb(255, 255, 255);
 }
 
 h1{
