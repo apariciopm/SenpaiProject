@@ -42,3 +42,8 @@ ul{
     text-align: end;
 }
 
+th{
+    border: 1px;
+    border-color: black;
+}
+

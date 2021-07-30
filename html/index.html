@@ -10,6 +10,59 @@
 <body>
     <main>
 
+        <form style="background-color: rgb(226, 226, 226);">
+            <label for="nombre">
+                <span>Nombre</span>
+                <input type="text" name="nombre" id="nombre" required>
+            </label>    
+            <label for="apellido">
+                <span>Apellido</span>
+                <input type="text" name="apellido" id="apellido">
+            </label>
+            <label for="email">
+                <span>Email</span>
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="fecha">
+                <span>Feche y hora actual</span>
+                <input type="datetime-local" name="fecha" id="fecha">
+            </label>
+            <select name="peliculas-pixar" id="peliculas-pixar">
+                <option value="Ratatouille">Ratatouille</option>
+                <option value="Cars">Cars</option>
+                <option value="Luca">Luca</option>
+                <option value="Soul">Soul</option>
+                <option value="Toy Story">Toy Story</option>
+            </select>
+            <input list="superautos">
+                <datalist id="superautos">
+                    <option value="Bugatti Veiron">Bugatti Veiron</option>
+                    <option value="Senna">Senna</option>
+                    <option value="Zonda">Zonda</option>
+                    <option value="GT-R Nismo">GT-R Nismo</option>
+                </datalist>
+                <input type="submit">
+        </form>
+
+        <table id="tabla">
+            <tr>
+                <th>o</th>
+                <th>o</th>
+                <th>x</th>
+            </tr>
+            <tr>
+                <th>o</th>
+                <th>x</th>
+                <th>o</th>
+            </tr>
+            <tr>
+                <th>x</th>
+                <th>x</th>
+                <th>o</th>
+            </tr>
+           
+
+        </table>
 
         <h1>Primer web desde cero</h1>
         <p>Comenzamos el curso viendo estructura de HTML, CSS y JS</p>
