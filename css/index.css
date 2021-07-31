@@ -1,6 +1,5 @@
 body {
     background-color: rgb(153, 152, 152);
-    background-image: url("/AparicioPineyrua-main/SenpaiProject/images/whaaat.jpg");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -12,34 +11,48 @@ p {
 
 h1{
     color: blue;
-    text-align: left;
+    text-align: center;
 }
 
 h2{
     color: rgb(255, 0, 149);
-    text-align: center;
+    text-align: left;
 }
 h3{
     color: rgb(255, 60, 0);
-    text-align: center;
+    text-align: left;
 }
 h4{
-    color: rgb(255, 251, 0);
-    text-align: center;
+    color: rgba(255, 0, 0, 0.781);
+    text-align: left;
 }
 h5{
     color: rgb(79, 79, 207);
-    text-align: center;
+    text-align: left;
 }
 h6{
     color: rgb(67, 223, 202);
-    text-align: center;
-}
+ }
+
+ #hcentro{
+     text-align: center;
+ }
 
 ul{
     background-color: brown;
     color: burlywood;
-    text-align: end;
+    text-align: left;
+    list-style-position: inside;
+}
+.parrafoleft{
+    text-align: left;
+    color: teal;
+    
+}
+.parrafoleftform{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    
 }
 
 th{
@@ -57,4 +70,9 @@ tr{
 #celeste{
     background-color: rgb(186, 210, 229);
 }
-
+#monoloco{
+    align-items: left;
+}
+#tabla{
+    margin-left: 50px;
+}

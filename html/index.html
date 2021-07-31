@@ -10,23 +10,54 @@
 <body>
     <main>
 
+        <!-- Primer area -->
+        <h1>Esta es la primer entrega del cusro FSD</h1>
+        <ul>
+            <p class="parrafoleft">Estas son las tareas asignadas a la primer entrega</p>
+            <li>Crear un archivo HTML para mostrar una tabla con tus gastos mensuales</li>
+            <li>Los datos relevantes deben de ser marcados como requeridos</li>
+            <li>Un botón para ingresar todos los datos</li>
+            <li>Un área de texto para agregar una pequeña biografía</li>
+            <li>Agregar un dropdown para seleccionar un deporte favorito</li>
+            <li>Agregar campos para el nombre, el apellido, email, y fecha de nacimiento</li>
+            <li>Crear un archivo HTML con un formulario de Registrarse como usuario</li>
+            <li>Crear un archivo HTML con un video, un audio, y una foto</li>
+            <li>Cantidad </li>
+            <li>Tipo</li>
+            <li>Método de pago</li>
+            <li>Fecha </li>
+            <li>Columnas</li>
+        </ul>
+
+         <!-- Area imagen -->
+        <figure>
+            <img id="monoloco" src="/AparicioPineyrua-main/SenpaiProject/images/whaaat.jpg" alt="monoloco">
+            <figcaption>El mono loco</figcaption>
+        </figure>
+        <!-- Area audio -->
+        <audio controls>
+            <source src="/AparicioPineyrua-main/SenpaiProject/audio/marchaimperial.mp4" type="audio/mp4">
+        </audio>
+        <!-- Area formulario -->
         <form style="background-color: rgb(226, 226, 226);">
+            <h2>Por favor, ingresá tus información personal</h2>
             <label for="nombre">
-                <span>Nombre</span>
+                <span>Nombre</span><br>
                 <input type="text" name="nombre" id="nombre" required>
-            </label>    
+            </label>  <br>  
             <label for="apellido">
-                <span>Apellido</span>
+                <span>Apellido</span><br>
                 <input type="text" name="apellido" id="apellido" required>
-            </label>
+            </label><br>
             <label for="email">
-                <span>Email</span>
+                <span>Email</span><br>
                 <input type="email" name="email" id="email" required>
-            </label>
+            </label><br>
             <label for="fecha">
-                <span>Feche y hora actual</span>
+                <span>Feche y hora actual</span><br>
                 <input type="datetime-local" name="fecha" id="fecha">
             </label>
+            <h3>Seleccioná tu pelicula favorita</h3>
             <select name="peliculas-pixar" id="peliculas-pixar">
                 <option value="Ratatouille">Ratatouille</option>
                 <option value="Cars">Cars</option>
@@ -34,6 +65,7 @@
                 <option value="Soul">Soul</option>
                 <option value="Toy Story">Toy Story</option>
             </select>
+            <h4>Busca tu auto favorito</h4>
             <input list="superautos">
                 <datalist id="superautos">
                     <option value="Bugatti Veiron">Bugatti Veiron</option>
@@ -41,12 +73,13 @@
                     <option value="Zonda">Zonda</option>
                     <option value="GT-R Nismo">GT-R Nismo</option>
                 </datalist>
-                <input type="submit">
+               <h5>Queremos saber más de ti!</h5>
+            <textarea name="textolargo" id="textolargo" cols="30" rows="5">Por favor, describir en esta área un resumen de tu biografía...</textarea><br>
+            <input type="submit">
         </form>
-
-        
-
-        <h1>Estos son los gastos del mes:</h1>
+        <!-- Area tabla -->
+        <h3>Estos son los gastos del mes:</h3>
+        <p class="parrafoleftform">aunque por lo general son más...</p>
             <table id="tabla">
             <tr id="cabezal">
                 <th>Fecha</th>
@@ -74,28 +107,20 @@
             </tr>
          </table> <br>
 
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/8nNU07W_e2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-       <audio controls>
-           <source src="/AparicioPineyrua-main/SenpaiProject/audio/IntroThunderstruck.mp3" type="audio/mp3">
-       </audio>
-
-        <h2>Curso de Full Stack</h2>
+        <!-- Area video -->    
+        <p class="parrafoleftform">EL LOCO LA PICOOOO!!!</p>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/8nNU07W_e2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+       <!-- Area textos varios -->
         <p>Al final del curso vamos a poder desarrollar aplicaciones web</p>
-        <h3>De academia Senpai</h3>
+        <h3 id="hcentro">El curso es de academia Senpai</h3>
         <p>Es una academia regional que enseña temas relacionados al segmento tecnologíco</p>
-        <h4>Dicatdo por César Rolón</h4>
+        <h4 id="hcentro">Dicatdo por César Rolón</h4>
         <p>Es una persona de Paraguay que se dedica a desarrollar aplicaciones</p>
-        <h5>Duración del curso 6 meses</h5>
+        <h5 id="hcentro">Duración del curso 6 meses</h5>
         <p>Es un curso intensivo que se dicta dos veces por semana</p>
-        <h6>Con entregas mensuales</h6>
+        <h6 id="hcentro">Con entregas mensuales</h6>
         <p>Para aprobar cada temática debemos hacer las entregas en tiempo y forma</p>
-
-        <ul>
-            <li>1</li>
-            <li>2</li>
-        </ul>
         
     </main>
 </body>
