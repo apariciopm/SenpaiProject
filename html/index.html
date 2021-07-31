@@ -17,11 +17,11 @@
             </label>    
             <label for="apellido">
                 <span>Apellido</span>
-                <input type="text" name="apellido" id="apellido">
+                <input type="text" name="apellido" id="apellido" required>
             </label>
             <label for="email">
                 <span>Email</span>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </label>
             <label for="fecha">
                 <span>Feche y hora actual</span>
@@ -44,28 +44,43 @@
                 <input type="submit">
         </form>
 
-        <table id="tabla">
-            <tr>
-                <th>o</th>
-                <th>o</th>
-                <th>x</th>
-            </tr>
-            <tr>
-                <th>o</th>
-                <th>x</th>
-                <th>o</th>
-            </tr>
-            <tr>
-                <th>x</th>
-                <th>x</th>
-                <th>o</th>
-            </tr>
-           
+        
 
-        </table>
+        <h1>Estos son los gastos del mes:</h1>
+            <table id="tabla">
+            <tr id="cabezal">
+                <th>Fecha</th>
+                <th>Método de pago</th>
+                <th>Tipo</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <th id="celeste">02/08/2021</th>
+                <th id="celeste">Contado</th>
+                <th id="celeste">UTE</th>
+                <th id="celeste">1</th>
+            </tr>
+            <tr>
+                <th>10/08/2021</th>
+                <th>Cuotas</th>
+                <th>Televisor</th>
+                <th>1 de 12 cuotas</th>
+            </tr>
+            <tr>
+                <th id="celeste">23/08/2021</th>
+                <th id="celeste">Contado</th>
+                <th id="celeste">Tv Cable</th>
+                <th id="celeste">5 de 12 meses</th>
+            </tr>
+         </table> <br>
 
-        <h1>Primer web desde cero</h1>
-        <p>Comenzamos el curso viendo estructura de HTML, CSS y JS</p>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/8nNU07W_e2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+       <audio controls>
+           <source src="/AparicioPineyrua-main/SenpaiProject/audio/IntroThunderstruck.mpg">
+       </audio>
+
         <h2>Curso de Full Stack</h2>
         <p>Al final del curso vamos a poder desarrollar aplicaciones web</p>
         <h3>De academia Senpai</h3>

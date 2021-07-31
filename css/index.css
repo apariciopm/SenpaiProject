@@ -12,7 +12,7 @@ p {
 
 h1{
     color: blue;
-    text-align: center;
+    text-align: left;
 }
 
 h2{
@@ -43,7 +43,18 @@ ul{
 }
 
 th{
-    border: 1px;
-    border-color: black;
+    border: 0.3px solid rgb(0, 0, 0);
+}
+tr{
+    background-color: rgb(255, 255, 255);
+
+}
+#cabezal{
+    background-color: darkgray;
+    color: rgb(0, 0, 0);
+}
+
+#celeste{
+    background-color: rgb(186, 210, 229);
 }
 
