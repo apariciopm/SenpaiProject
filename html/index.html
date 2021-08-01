@@ -39,8 +39,8 @@
             <source src="../audio/marchaimperial.mp4" type="audio/mp4">
         </audio>
         <!-- Area formulario -->
-        <form style="background-color: rgb(226, 226, 226);">
-            <h2>Por favor, ingresá tus información personal</h2>
+        <form id="form">
+            <h2>Por favor, ingresá tu información personal</h2>
             <label for="nombre">
                 <span>Nombre</span><br>
                 <input type="text" name="nombre" id="nombre" required>
@@ -54,7 +54,7 @@
                 <input type="email" name="email" id="email" required>
             </label><br>
             <label for="fecha">
-                <span>Feche y hora actual</span><br>
+                <span>Fecha y hora actual</span><br>
                 <input type="datetime-local" name="fecha" id="fecha">
             </label>
             <h3>Seleccioná tu pelicula favorita</h3>
@@ -65,7 +65,7 @@
                 <option value="Soul">Soul</option>
                 <option value="Toy Story">Toy Story</option>
             </select>
-            <h4>Busca tu auto favorito</h4>
+            <h4>Buscá tu auto favorito</h4>
             <input list="superautos">
                 <datalist id="superautos">
                     <option value="Bugatti Veiron">Bugatti Veiron</option>
@@ -74,7 +74,7 @@
                     <option value="GT-R Nismo">GT-R Nismo</option>
                 </datalist>
                <h5>Queremos saber más de ti!</h5>
-            <textarea name="textolargo" id="textolargo" cols="30" rows="5">Por favor, describir en esta área un resumen de tu biografía...</textarea><br>
+            <textarea name="textolargo" id="textolargo" cols="30" rows="5">Por favor, describí en esta área un resumen de tu biografía...</textarea><br>
             <input type="submit">
         </form>
         <!-- Area tabla -->
