@@ -55,12 +55,17 @@ ul{
 .parrafoleft{
     text-align: left;
     color: teal;
+    font-size: 2rem;
     
 }
 .parrafoleftform{
     text-align: left;
     color: rgb(255, 255, 255);
-    
+        
+}
+
+.ulrojo{
+    font-size: 1.5rem;
 }
 
 th{
@@ -88,39 +93,63 @@ tr{
     background-color:rgb(226, 226, 226);
 }
 
+
 .grid-container{
     display: grid;
-    background-color: burlywood;
+    background-image:  linear-gradient(rgb(104, 203, 236), rgb(9, 140, 184)
+    );
     grid-template-columns: repeat(4, auto);
-    grid-template-rows:  repeat(6, auto);
-    grid-area: span;
+    grid-template-rows:  repeat(6, auto);    
 }
 
 .grid-container div{
-    background-color: crimson;
+    background-color: rgb(88, 157, 235);
     text-align: center;
+    margin: 0.5rem;
     padding: 0.5rem;
+    font-size: 2rem;
+    border: 0.2rem solid blue ;
+    border-radius: 1rem;
+    border-style: inset;
+   
 }
 
-/* .grid-container {
-    display: grid;
-    background-color: blanchedalmond;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto auto auto;
-}
-
-.grid-container div {
-    background-color: brown;
-
-    text-align: center;
-    color: white;
-    padding: 10px;
-    border: 1px solid black;
-}*/
-
-.div1{
+div.div1{
     grid-column: auto / auto;
     grid-row: auto / auto;
     padding: 1.5rem;
-    margin: 1.5rem;
+    margin: 0.5rem;
+} 
+
+.grid-container2{
+    display: grid;
+    background-color: rgb(241, 144, 144);
+    
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows:  repeat(2, auto);    
+}
+.grid-container2 div{
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: 0.2rem solid blue ;
+    border-radius: 1rem;
+    border-style: inset;
+   
+}
+
+div.div1.div2.div3.div4{
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+    background-color: brown;
+
+} 
+
+div.div5{
+    text-align: center;
+    text-justify: auto;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  
 } 
