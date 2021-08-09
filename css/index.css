@@ -79,3 +79,40 @@ tr{
 #form{
     background-color:rgb(226, 226, 226);
 }
+
+.grid-container{
+    display: grid;
+    background-color: burlywood;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:  repeat(6,1fr);
+}
+
+.grid-container div{
+    background-color: crimson;
+    text-align: center;
+    padding: 5px;
+}
+
+---------------
+
+/* .grid-container {
+    display: grid;
+    background-color: blanchedalmond;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+}
+
+.grid-container div {
+    background-color: brown;
+
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}*/
+
+.div{
+    grid-column: 3 / span 2;
+
+    grid-row: 2 / span 3;
+} 
