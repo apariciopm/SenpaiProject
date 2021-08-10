@@ -170,7 +170,7 @@ div.div5{
 .div1-3{
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    background-color: rgb(247, 104, 216);
+    background-color:mediumorchid;
     padding: 2rem;
 
 }
@@ -178,21 +178,21 @@ div.div5{
 .div2-3{
     grid-column: 1 / 2;
     grid-row: 2 / 4;
-    background-color: rgb(184, 30, 255);
+    background-color: mediumpurple;
     padding-top: 12rem;
 }
 
 .div3-3{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgb(135, 30, 255);
+    background-color: mediumseagreen;
     padding-top: 9rem;
 }
 
 .div4-3{
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    background-color: rgb(30, 90, 255);
+    background-color: mediumvioletred;
 }
 
 .div5-3{
