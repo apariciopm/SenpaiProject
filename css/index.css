@@ -103,7 +103,7 @@ tr{
 }
 
 .grid-container div{
-    background-color: rgb(88, 157, 235);
+    background-color: rgb(145, 193, 248);
     text-align: center;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -123,10 +123,9 @@ div.div1{
 
 .grid-container2{
     display: grid;
-    background-color: rgb(241, 144, 144);
-    
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows:  repeat(2, auto);    
+    background-color: rgb(214, 3, 3);
+    grid-template-columns: repeat (3, auto);
+    grid-template-rows:  repeat (2, auto);    
 }
 .grid-container2 div{
     text-align: center;
@@ -139,16 +138,14 @@ div.div1{
    
 }
 
-div.div1.div2.div3.div4{
+/* div.div1.div2.div3.div4{
     grid-column: auto / auto;
     grid-row: auto / auto;
-    background-color: brown;
+    background-color: rgb(165, 87, 42);
 
-} 
+}  */
 
 div.div5{
-    text-align: center;
-    text-justify: auto;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
   
