@@ -1,7 +1,10 @@
+
+/* --------------------FORMATO PÁGINA---------------------- */
+
 main{
     font-family: sans-serif;
 }
-
+/* --------------------ALINEACIÓN TITULO---------------------- */
 .h-1{
     display: block;
     margin-left: auto;
@@ -10,6 +13,7 @@ main{
 
 }
 
+/* --------------------ALINEACIÓN BLOQUES---------------------- */
 
 .imagen,.bloque-1,.bloque-2 {
         display: block;
@@ -17,6 +21,7 @@ main{
         margin-right: auto;
         width: 50%;
 }
+/* --------------------FORMATO BLOQUES---------------------- */
 
 .bloque-1, .bloque-2{
     background-color: coral;
@@ -25,7 +30,9 @@ main{
     border-color: rgb(170, 84, 53);
     padding: 10px;
     color: white;
+    box-shadow: 0 8px 12px 0 rgb(170, 84, 53), 0 12px 40px 0 rgba(12, 4, 133, 0.19);
 }
+/* --------------------FORMATO LISTA UL---------------------- */
 
 ul{
     list-style-position: outside;
