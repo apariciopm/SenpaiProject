@@ -1,43 +1,33 @@
-/* 
-.page{
-    display: grid;
-    margin: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100%;
-    height: 500px;
-    grid-template-areas: "covid-gif covid-gif covid-gif"
-                         "bloque-1 bloque-1 bloque-1"
-                         "bloque-2 bloque-2 bloque-2";
-    justify-content: center;
-    gap: 20px;
+main{
+    font-family: sans-serif;
 }
 
-.page.imagen{
-    display: grid;
-    align-content: center;
-    align-items: center;
-    width: auto;
-    height: 300px;
-} */
+.h-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 
-/* .covid-gif{
-    grid-area: covid-gif;
 }
 
-.page.bloque-1{
-    display: grid;
-    align-content: center;
-    align-items: center;
-    width: auto;
+
+.imagen,.bloque-1,.bloque-2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
 }
 
-.bloque-1{
-    grid-area: bloque-1;
-} */
-
-.bloque-1{
-  margin: auto;
-  width: 60%;
-  padding: 10px;
+.bloque-1, .bloque-2{
+    background-color: coral;
+    border-radius: 10px;
+    border-style: inherit;
+    border-color: rgb(170, 84, 53);
+    padding: 10px;
+    color: white;
 }
+
+ul{
+    list-style-position: outside;
+}
+
