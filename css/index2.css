@@ -38,3 +38,9 @@ ul{
     list-style-position: outside;
 }
 
+img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
