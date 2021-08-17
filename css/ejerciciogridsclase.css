@@ -1,0 +1,101 @@
+/* ¿Qué falta para inicializar? */
+html{
+    font-size: 62.5%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 4.5fr 4.5fr 0.5fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.nav {
+    /* ¿Cómo puedo resumir el start y el end? */
+    grid-column-start: span 4;
+    /* grid-column-end: 4; */
+    border-bottom: 0.1rem solid black;
+}
+
+/* ¿Cómo podríamos usar rem como pixel en vez de em? */
+/* ¿Qué hace el repeat y el size? */
+.hero {
+     /* ¿Cómo puedo resumir el start y el end? */
+    grid-column-start: span 4;
+    /* grid-column-end: 4; */
+    margin-top: 3rem;
+    text-align: end;
+    background-image: url('../images/johnny_automatic_four_apples.jpg');
+    background-repeat: no-repeat;
+    background-size: 50rem 20rem;
+}
+
+.section {
+    grid-column-start: span 4;
+    /* grid-column-end: 4; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-top: 0.5rem;
+}
+
+
+h1 {
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+  
+h2 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.cards {
+    border-radius: 5px;
+    /* ¿Qué son los valores utilizados? */
+    box-shadow: -0.8rem 1.3rem 3.5rem 0.2rem rgba(133, 133, 133, 1);
+    margin-top: 2rem;
+    align-items: center;
+    
+    /* ¿Por qué 100 %? */
+    height: 100%;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    margin-top: 2rem;
+}
+
+
+.footer h3 {
+    /* ¿Qué hace el float? */
+    float: right;
+}
+
+button {
+    /* ¿Por qué auto? */
+    margin: auto;
+    /* ¿Podría usar variable aquí?, ¿por qué? No porque no hay*/
+    background-color: #6b62fd;
+    display: block;
+    border: none;
+    color: white;
+    text-align: left;
+    /* ¿Por qué aumenta de tamaño con esta opción?, ¿o no? */
+    margin: auto;
+    padding: 1.5rem 3.2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    /* ¿Qué hace el cursor? */
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+
+/* Agregar semántica en el HTML */
+/* Alinear el botón. 
+¿Necesito un grid más?, ¿o no? 
+Agregar el hover 
+    Se usa el transform */
