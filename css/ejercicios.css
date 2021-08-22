@@ -227,3 +227,7 @@ h1{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+div {
+    display: inline-block;
+}
