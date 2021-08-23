@@ -26,23 +26,19 @@ body{
 /* <!-- -----------------------Main Grid body-------------------------- --> */
 .grid-1{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 2.5fr 2fr 0.6fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 2fr 0.6fr;
     gap: 5px;
     margin: 0px;
-    
     grid-template-areas: "header header header"
                          "sidebar main main"
                          "sidebar main main"
                          "sidebar extra extra"
                          "footer footer footer";
     width: 100%;
-    
     justify-content: center;
 }
 
-
-    
 
 
 /* <!-- -----------------------Justify Datetime in header-------------------------- --> */
@@ -73,7 +69,7 @@ body{
     border-color: var(--color-amarillo);
     border-style: solid;
     border-radius: 1rem;
-    background: rgba(235, 194, 11, 0.89);
+    background: rgba(235, 194, 11, 0.644);
    
 }
 
@@ -82,38 +78,19 @@ body{
 .grid-sidebar{
     display: grid;
     text-align: center;
-    border-color: var(--color-rojo);
+    border-style: none;
+    background-image: linear-gradient( rgba(219, 15, 15, 0.712), var(--color-rojo));
+    box-shadow: 0.4rem 0.8rem 0.9rem var(--color-rojo), 0.4rem 0.8rem 0.9rem yellow;
     grid-area: sidebar;
-    border-style: solid;
     border-radius: 1rem;
-    background: rgba(235, 37, 11, 0.89);
-
+    justify-items: center;
 }
 
+.grid-sidebar h2 ol{
+    padding: 2%;
+    justify-items: normal;
+}
 
-.aside-container {
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-  }
-
-
-  .click {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  } 
 
 /* <!-- -----------------------Main format-------------------------- --> */
 .grid-main{
@@ -121,13 +98,20 @@ body{
     text-align: center;
     border-color: var(--color-verde);
     grid-area: main;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
     border-style: solid;
     border-radius: 1rem;
-    background: rgba(11, 235, 97, 0.89);
+    background: rgba(5, 175, 110, 0.444);
+    color: #fafafa;
+    font-size: 2rem;
+    font-weight: bold;
 
   
+}
+
+.violeta {
+    color: rgb(48, 3, 90);
+    text-shadow:  2px 2px wheat;
 }
 
 /* <!-- -----------------------Extra format-------------------------- --> */
@@ -136,11 +120,18 @@ body{
     text-align: center;
     border-color: var(--color-azul);
     grid-area: extra;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
     border-style: solid;
     border-radius: 1rem;
+    background: rgba(5, 118, 211, 0.244);
   
+}
+
+.grid-extra img {
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 /* <!-- -----------------------Footer format-------------------------- --> */
 .grid-footer{
@@ -148,11 +139,16 @@ body{
     text-align: center;
     border-color: var(--color-petroleo);
     grid-area: footer;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
     border-style: solid;
     border-radius: 1rem;
+    background: rgba(5, 77, 211, 0.644);
   
+}
+
+li  {
+    display: inline-block;
+    padding: 10rem;
 }
 
 
