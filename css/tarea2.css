@@ -18,6 +18,11 @@ html {
 
 }
 
+body{
+    background-image: url(https://images.fineartamerica.com/images-medium-large/3-lunar-surface-of-earths-moon-stocktrek-images.jpg);
+    background-attachment: fixed;
+}
+
 /* <!-- -----------------------Main Grid body-------------------------- --> */
 .grid-1{
     display: grid;
@@ -68,22 +73,11 @@ html {
     border-color: var(--color-amarillo);
     border-style: solid;
     border-radius: 1rem;
-    background: rgba(193, 201, 193, 0.1);
+    background: rgba(235, 194, 11, 0.89);
    
 }
 
-.grid-header:before {
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
-}
 
-.grid-header {
-    background: inherit;
-}
- 
-.grid-header:before {
-    background: inherit;
-}
 /* <!-- -----------------------Sidebar format-------------------------- --> */
 .grid-sidebar{
     display: grid;
@@ -92,8 +86,10 @@ html {
     grid-area: sidebar;
     border-style: solid;
     border-radius: 1rem;
+    background: rgba(235, 37, 11, 0.89);
 
 }
+
 
 .aside-container {
     display: inline-block;
@@ -129,6 +125,7 @@ html {
     padding-bottom: 2%;
     border-style: solid;
     border-radius: 1rem;
+    background: rgba(11, 235, 97, 0.89);
 
   
 }
