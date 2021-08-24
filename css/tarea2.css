@@ -26,17 +26,15 @@ body{
 /* <!-- -----------------------Main Grid body-------------------------- --> */
 .grid-1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 1fr 1fr 2fr 0.6fr;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: -0.4rem auto auto -0.4fr;
     gap: 5px;
     margin: 0px;
-    grid-template-areas: "header header header"
-                         "sidebar main main"
-                         "sidebar main main"
-                         "sidebar extra extra"
-                         "footer footer footer";
+    grid-template-areas: "header header "
+                         "sidebar main "
+                         "sidebar extra "
+                         "footer footer ";
     width: 100%;
-    justify-content: center;
 }
 
 
@@ -53,6 +51,10 @@ body{
 }
 /* <!-- -----------------------Header format-------------------------- --> */
 
+header{
+    padding-bottom: 2%;
+}
+
 .grid-header > h1 {
     margin: 0 0 0rem;
     font-size: 3rem;
@@ -60,7 +62,7 @@ body{
 
 .grid-header > h2 {
     font-style: oblique;
-    font-size: rem;
+    
 }
 .grid-header{
     display: grid;
@@ -70,6 +72,7 @@ body{
     border-style: solid;
     border-radius: 1rem;
     background: rgba(235, 194, 11, 0.644);
+    
    
 }
 
@@ -77,25 +80,42 @@ body{
 /* <!-- -----------------------Sidebar format-------------------------- --> */
 .grid-sidebar{
     display: grid;
-    text-align: center;
+    padding-inline-start: 5%;
     border-style: none;
-    background-image: linear-gradient( rgba(219, 15, 15, 0.712), var(--color-rojo));
+    background-image: linear-gradient( var(--color-rojo),rgba(219, 15, 15, 0.712));
     box-shadow: 0.4rem 0.8rem 0.9rem var(--color-rojo), 0.4rem 0.8rem 0.9rem yellow;
     grid-area: sidebar;
     border-radius: 1rem;
-    justify-items: center;
+    justify-content: left;
 }
 
-.grid-sidebar h2 ol{
-    padding: 2%;
-    justify-items: normal;
+
+
+.div-li {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "h2"
+                         "ol";
+     width: 100%;
+ 
 }
+
+.h2-grid{
+    grid-area: h2;
+}
+
+.ol-grid{
+    grid-area: ol;
+}
+
+
 
 
 /* <!-- -----------------------Main format-------------------------- --> */
 .grid-main{
     display: grid;
-    text-align: center;
+    text-align:initial;
     border-color: var(--color-verde);
     grid-area: main;
     padding: 2%;
@@ -117,10 +137,10 @@ body{
 /* <!-- -----------------------Extra format-------------------------- --> */
 .grid-extra{
     display: grid;
-    text-align: center;
+    align-content: left;
     border-color: var(--color-azul);
     grid-area: extra;
-    padding: 2%;
+    padding: 0%;
     border-style: solid;
     border-radius: 1rem;
     background: rgba(5, 118, 211, 0.244);
@@ -128,18 +148,16 @@ body{
 }
 
 .grid-extra img {
-    display: block;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+   display: block;
+   width: 100%;
+   height: auto;
+   border-radius: 1rem;
 }
 /* <!-- -----------------------Footer format-------------------------- --> */
 .grid-footer{
     display: grid;
-    text-align: center;
     border-color: var(--color-petroleo);
     grid-area: footer;
-    padding: 2%;
     border-style: solid;
     border-radius: 1rem;
     background: rgba(5, 77, 211, 0.644);
@@ -148,80 +166,84 @@ body{
 
 li  {
     display: inline-block;
-    padding: 10rem;
+    padding-right: 5%;
+    padding-left: 6%;
+    color: lightgoldenrodyellow;
+   
+
+
 }
 
 
 /* <!-- -----------------------Cambio de background-------------------------- --> */
 
-
+/* 
 @media screen and (max-width: 1024px) {
-    body {
-        background-color: #d8f2f7;   
+    .grid-header {
+        background-color: var(--color-azul)   
     }
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        background-color: #CAF0F8;  
+    .grid-extra {
+        background-color: var(--color-azul) 
     }
 }
 
 @media screen and (max-width: 800px) {
-    body {
-        background-color: #ADE8F4;   
+    .grid-footer {
+        background-color: var(--color-azul)  
     }
 }
 
 @media screen and (max-width: 700px) {
-    body {
-        background-color: #90E0EF; 
+    .grid-main {
+        background-color: var(--color-azul) 
     }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        background-color: #48CAE4;   
+    .grid-sidebar {
+        background-color: var(--color-azul)   
     }
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        background-color: #00B4D8;  
+    .grid-1 {
+        background-color: var(--color-azul) 
     }
 }
 
 @media screen and (max-width: 400px) {
-    body {
-        background-color: #0096C7; 
+    .grid-main {
+        background-color: var(--color-azul) 
     }
 }
 
 @media screen and (max-width: 300px) {
-    body {
-        background-color:#0077B6; 
+    .grid-header {
+        background-color:var(--color-azul) 
     }
 }
 
 @media screen and (max-width: 200px) {
-    body {
-        background-color:#023E8A; 
+    .grid-sidebar {
+        background-color:var(--color-azul) 
     }
 }
 @media screen and (max-width: 100px) {
-    body {
-        background-color:#03045E; 
+    .grid-extra {
+        background-color:var(--color-azul) 
     }
-}
+} */
 
 /* <!-- -----------------------Responsive-------------------------- --> */
 
 @media screen and (max-width: 1000px) {
     .grid-1 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.6fr auto auto auto 0.6fr;
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 0.6fr auto auto 0.6fr;
         grid-template-areas: "header header"
-                             "sidebar main"
                              "sidebar main"
                              "extra extra"
                              "footer footer";
@@ -233,7 +255,7 @@ li  {
 @media screen and (max-width: 700px) {
     .grid-1 {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.6fr auto auto auto 0.6fr;
+        grid-template-rows: 0.6fr auto auto 0.6fr;
         grid-template-areas: "header"
                              "sidebar "
                              "main"
