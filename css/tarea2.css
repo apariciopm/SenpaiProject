@@ -153,6 +153,16 @@ header{
    height: auto;
    border-radius: 1rem;
 }
+
+/* <!-- -----------------------Atom ant format-------------------------- --> */
+
+section .atom-ant {
+    max-width: 9%;
+    position: fixed;
+    bottom: -12%;
+    left: -12%;
+}
+
 /* <!-- -----------------------Footer format-------------------------- --> */
 .grid-footer{
     display: grid;
@@ -166,14 +176,63 @@ header{
 
 li  {
     display: inline-block;
-    padding-right: 5%;
-    padding-left: 6%;
     color: lightgoldenrodyellow;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: var(--color-rojo);
+    margin: 0.4rem 0.2rem;
+    padding: 1rem 3.2rem;
    
-
-
 }
 
+.cargando{
+    cursor: progress;
+}
+.cargo{
+    cursor: help;
+}
+.aun-no{
+    cursor: wait;
+}
+.mmmh{
+    cursor: url;
+}
+
+.atom-launch{
+    background-image: linear-gradient(90deg, #FEE140 0%, #1d0ea7 100%);
+    border-radius: 1.5rem;
+    color: lightgoldenrodyellow;
+    margin: 0.4rem 0.2rem;
+    padding: 1rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: alias;
+ }
+
+ .atom-launch {
+    animation: atom-launch 1s ease-in-out infinite;
+  }
+
+  @keyframes atom-launch {
+    10% {
+      transform: matrix3d(1, 0, 0, 0.005, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    30% {
+      transform: matrix3d(1, 0, 0, -0.005, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+ }
+
+
+ .atom-launch:hover{
+    animation: atom-launch 70ms ease-in-out infinite;
+    background-image: linear-gradient(90deg, #fe4040 0%, #1d0ea7 100%);
+ }
+
+ .atom-launch:on-cl{
+     
+ }
 
 /* <!-- -----------------------Cambio de background-------------------------- --> */
 
