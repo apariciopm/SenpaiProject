@@ -152,6 +152,7 @@ header{
    width: 100%;
    height: auto;
    border-radius: 1rem;
+   position: ;
 }
 
 /* <!-- -----------------------Atom ant format-------------------------- --> */
@@ -228,11 +229,52 @@ li  {
  .atom-launch:hover{
     animation: atom-launch 70ms ease-in-out infinite;
     background-image: linear-gradient(90deg, #fe4040 0%, #1d0ea7 100%);
+    content: attr(data-hover);
  }
 
- .atom-launch:on-cl{
+ /* .atom-launch:on-cl{
      
- }
+
+#move {
+  height: 50px;
+  width: 50px;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+    -webkit-animation: diagonal 12s infinite;
+    -moz-animation: diagonal 12s infinite;
+    -o-animation: diagonal 12s infinite;
+    animation: diagonal 12s infinite;
+}
+
+@-webkit-keyframes diagonal {
+    0%  { transform: translatey(-10px) translatex(0px) }
+    60% { transform: translatey(-1000px) translatex(2000px) }
+   100% { transform: translatey(-3000px) translatex(6000px) }
+}
+
+@-moz-keyframes diagonal {
+        0% { transform: translatey(-10px) translatex(0px) }
+       60%  { transform: translatey(-1000px) translatex(2000px) }
+      100%  { transform: translatey(-3000px) translatex(6000px) }
+
+}
+
+@-o-keyframes diagonal {
+        0% { transform: translatey(-10px) translatex(0px) }
+       60% { transform: translatey(-1000px) translatex(2000px) }
+      100% { transform: translatey(-3000px) translatex(6000px) }
+
+}
+
+@keyframes diagonal {
+        0%  { transform: translatey(-10px) translatex(0px) }
+       60%  { transform: translatey(-1000px) translatex(2000px) }
+       100% { transform: translatey(-3000px) translatex(6000px) }
+
+}
+
+ } */
 
 /* <!-- -----------------------Cambio de background-------------------------- --> */
 
