@@ -207,6 +207,9 @@ li  {
     cursor: url;
 }
 
+/* <!-- -----------------------Footer last button format-------------------------- --> */
+
+
 .atom-launch{
     background-image: linear-gradient(90deg, var(--color-amarillo) 0%, #0f0475 100%);
     border-radius: 1.5rem;
@@ -219,6 +222,8 @@ li  {
     font-size: 16px;
     cursor: alias;
  }
+
+/* <!-- -----------------------Footer last button format animation "crazy button"-------------------------- --> */
 
  .atom-launch {
     animation: atom-launch 1s ease-in-out infinite;
@@ -240,6 +245,7 @@ li  {
    
  }
 
+/* <!-- -----------------------Footer last button format animation "huston we have a problem"-------------------------- --> */
 
 .atom-launch:active{
   height: 50px;
