@@ -152,7 +152,7 @@ header{
    width: 100%;
    height: auto;
    border-radius: 1rem;
-   position: ;
+   
 }
 
 /* <!-- -----------------------Atom ant format-------------------------- --> */
@@ -164,9 +164,17 @@ section .atom-ant {
     left: -12%;
 }
 
+.atom-ant{
+    animation: atom-ant 1s ease-out infinite;
+}
+
+
+
 /* <!-- -----------------------Footer format-------------------------- --> */
 .grid-footer{
     display: grid;
+    position: fixed;
+    bottom: 0;
     border-color: var(--color-petroleo);
     grid-area: footer;
     border-style: solid;
@@ -200,7 +208,7 @@ li  {
 }
 
 .atom-launch{
-    background-image: linear-gradient(90deg, #FEE140 0%, #1d0ea7 100%);
+    background-image: linear-gradient(90deg, var(--color-amarillo) 0%, #0f0475 100%);
     border-radius: 1.5rem;
     color: lightgoldenrodyellow;
     margin: 0.4rem 0.2rem;
@@ -228,53 +236,50 @@ li  {
 
  .atom-launch:hover{
     animation: atom-launch 70ms ease-in-out infinite;
-    background-image: linear-gradient(90deg, #fe4040 0%, #1d0ea7 100%);
-    content: attr(data-hover);
+    background-image: linear-gradient(90deg, var(--color-amarillo) 0%, #f84600 100%);
+   
  }
 
- /* .atom-launch:on-cl{
-     
 
-#move {
+.atom-launch:active{
   height: 50px;
-  width: 50px;
+  width: 180px;
   position:fixed;
   bottom: 0;
   left: 0;
-    -webkit-animation: diagonal 12s infinite;
-    -moz-animation: diagonal 12s infinite;
-    -o-animation: diagonal 12s infinite;
-    animation: diagonal 12s infinite;
+    -webkit-animation: atom-ant 3s infinite;
+    -moz-animation: atom-ant 3s infinite;
+    -o-animation: atom-ant 3s infinite;
+    animation: atom-ant 3s infinite;
 }
 
-@-webkit-keyframes diagonal {
-    0%  { transform: translatey(-10px) translatex(0px) }
+@-webkit-keyframes atom-ant {
+    0%  { transform: translatey(-10px) translatex(800px) }
     60% { transform: translatey(-1000px) translatex(2000px) }
    100% { transform: translatey(-3000px) translatex(6000px) }
 }
 
-@-moz-keyframes diagonal {
-        0% { transform: translatey(-10px) translatex(0px) }
+@-moz-keyframes atom-ant {
+        0% { transform: translatey(-10px) translatex(800px) }
        60%  { transform: translatey(-1000px) translatex(2000px) }
       100%  { transform: translatey(-3000px) translatex(6000px) }
 
 }
 
-@-o-keyframes diagonal {
-        0% { transform: translatey(-10px) translatex(0px) }
+@-o-keyframes atom-ant {
+        0% { transform: translatey(-10px) translatex(800px) }
        60% { transform: translatey(-1000px) translatex(2000px) }
       100% { transform: translatey(-3000px) translatex(6000px) }
 
 }
 
-@keyframes diagonal {
-        0%  { transform: translatey(-10px) translatex(0px) }
+@keyframes atom-ant {
+        0%  { transform: translatey(-10px) translatex(800px) }
        60%  { transform: translatey(-1000px) translatex(2000px) }
        100% { transform: translatey(-3000px) translatex(6000px) }
 
 }
 
- } */
 
 /* <!-- -----------------------Cambio de background-------------------------- --> */
 
