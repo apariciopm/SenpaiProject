@@ -18,3 +18,9 @@ for (let index = 0; index < array.length; index++) {
 
 console.log(sumaIva(precio, iva));
 
+
+const numeroAleatorio = Math.round(Math.random() * 10);
+        9
+        
+      
+
