@@ -61,3 +61,21 @@ const dado = Math.round(Math.random() * 6);
 let jugador = prompt("Elija un numero del 1 al 6");
 
 console.log(dado)
+
+
+let dinero =0;
+while (dinero > 0) {
+    dinero+=10;
+    if (dinero > 0) {
+    continue;    
+    }
+    else if (dinero >= 200) {
+        break;
+    }
+    
+    
+}
+console.log(dinero)
+
+
+
