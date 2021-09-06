@@ -12,15 +12,20 @@
 //Escriba un programa para calcular la suma de los dos valores enteros dados. i los dos valores son iguales, devuelve el triple de su suma // -->
 
     <!-- <script>
-        let valorUno = prompt("Ingresa el primer valor");
-        let valorDos =  prompt("Ingresá el segundo valor");
-       let valorFinal= 0;
+
+        let valorUno = 0;
+        let valorDos =  0;
+        let valorFinal= 0;
+
+        valorUno = prompt("Ingresa el primer valor");
+        valorDos =  prompt("Ingresá el segundo valor");
+       
 
         if (valorUno === valorDos) {
-               valorFinal = parseInt(valorUno * 3);
+               valorFinal = valorUno * 3;
         }
         else if (valorUno != valorDos) {
-            valorFinal =  parseInt(valorUno + valorDos);
+            valorFinal = parseInt(valorUno, 10) + parseInt(valorDos, 10)
         }
         alert(valorFinal);
 
@@ -36,7 +41,7 @@ Según el candidato elegido (A, B ó C) se le debe imprimir el mensaje
 “Usted ha votado por el partido [color que corresponda al candidato elegido]”. 
 Si el usuario ingresa una opción que no corresponde a ninguno de los candidatos disponibles, indicar “Opción errónea”.*/ -->
 
-<h1>Elecciones electorales</h1>
+<!-- <h1>Elecciones electorales</h1>
 <div>
     <h2>Elecciones electorales</h2><br>
     <ul>
@@ -44,23 +49,62 @@ Si el usuario ingresa una opción que no corresponde a ninguno de los candidatos
         <li>Candidato B por el partido verde</li>
         <li>Candidato C por el partido azul</li>
     </ul>
-</div>
+</div> -->
+
+<!-- <script>
+
+let opcionCandidato = prompt("Seleccioná a tu candidato las Opciones son A por el partido rojo, B por el partido verde o C por el partido azul");
+
+if (opcionCandidato === "A" || opcionCandidato ===  "B" || opcionCandidato === "C") {
+    document.write("Usted ha votado por el partido:" + opcionCandidato);    
+}
+else if (opcionCandidato != "A" || opcionCandidato != "B" || opcionCandidato != "C") {
+    document.write("Opción errónea");
+}
+</script> -->
+
+<!-- --------------------------------------------------- -->
+
+
+<!-- /* 2
+Hacer un programa que permita saber si un año es bisiesto. 
+Para que un año sea bisiesto debe ser divisible por 4 y no debe ser divisible por 100, excepto que también sea divisible por 400.
+*/ -->
+<!-- 
+<script>
+
+let año = parseInt(prompt("Ingresa una fecha en fomrato año para saber si es bisiesto"));
+
+
+if ( (año % 4 == 0) || (año % 400 == 0)) {
+        document.write("Es un año bisiesto");
+}
+
+else {
+    document.write("No es un año bisiesto");
+}
+</script> -->
+<!-- --------------------------------------------------- -->
+
+
+<!-- 
+/* 3
+Solicitar al usuario un número. Imprimer en pantalla hasta que el número sea menor a 20".
+ */ -->
+
 
 <script>
 
-let descrpcion = prompt("asas");
-let opcionCandidato = prompt("Seleccioná a tu candidato las Opciones son A, B o C");
+let numero = parseInt("Ingresar un numero entero que sea mas de 30");
+let i = 0;
 
-if (opcionCandidato = A ||  B || C) {
-    alert("Usted ha votado por el partido:" + opcionCandidato);    
-}
-if (opcionCandidato != A || opcionCandidato != B || opcionCandidato != C) {
-    alert("Opción errónea")
-}
+while (i < 20) {
+    i = i + numero, i++    
+};
+document.write(i);
 
 
 </script>
-
 
 
 </body>

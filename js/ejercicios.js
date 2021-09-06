@@ -5,9 +5,13 @@ Recuerde constatar que los tres valores introducidos por el teclado sean valores
 Presente un mensaje de alerta en caso de que se detecte la introducción de valores iguales.
 */
 
-let a = prompt("Ingresa el primer numero entero");
-let b = prompt("Ingresa el segundo numero entero");
-let c = prompt("Ingresa el tercer numero entero")
+let a = 0;
+let b = 0;
+let c = 0;
+
+a = prompt("Ingresa el primer numero entero");
+b = prompt("Ingresa el segundo numero entero");
+c = prompt("Ingresa el tercer numero entero")
 
 if (b = a) {
     b = prompt("Ingresa un numero difente que ");
@@ -33,9 +37,13 @@ alert(numeros(8,5,146));
 Escriba un programa para calcular la suma de los dos valores enteros dados. 
 Si los dos valores son iguales, devuelve el triple de su suma */
 
-let valorUno = prompt("Ingresa el primer valor");
-let valorDos =  prompt("Ingresá el segundo valor");
+let valorUno = 0;
+let valorDos =  0;
 let valorFinal = 0;
+
+valorUno = prompt("Ingresa el primer valor");
+valorDos =  prompt("Ingresá el segundo valor");
+valorFinal = 0;
    {if (valorUno === valorDos) {
         let valorFinal = valorUno * 3;
     }
