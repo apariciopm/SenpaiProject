@@ -29,3 +29,18 @@ let numeros = function (a, b, c) {
 
 alert(numeros(8,5,146));
 
+/*
+Escriba un programa para calcular la suma de los dos valores enteros dados. 
+Si los dos valores son iguales, devuelve el triple de su suma */
+
+let valorUno = prompt("Ingresa el primer valor");
+let valorDos =  prompt("Ingresá el segundo valor");
+let valorFinal = 0;
+   {if (valorUno === valorDos) {
+        let valorFinal = valorUno * 3;
+    }
+    else {
+        valorUno + valorUno;
+    }};
+
+   alert(valorFinal);
