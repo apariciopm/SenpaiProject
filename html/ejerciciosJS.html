@@ -104,8 +104,37 @@ while (i < 20) {
 document.write(i);
 
 
+
 </script>
 
+
+<script>
+    function limita(elEvento, maximoCaracteres) {
+        let elemento = document.getElementById("texto");
+
+        let evento = elEvento;
+
+        if(elemento.value.length >= maximoCaracteres) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    
+     const actualizaInfo = (maximoCaracteres) => {
+        let cambiarTexto = document.getElementById("id")
+        cambiarTexto = document.createElement("");
+        cambiarTexto.textContent = input.value;
+
+    input.value ="";
+    
+    }
+
+</script>
+
+<div id="info">Máximo 100 caracteres</div>
+<textarea id="texto" onkeypress="return limita(event, 100);" onkeyup="actualizaInfo(100)" rows="6" cols="30"></textarea>
 
 </body>
 </html>
